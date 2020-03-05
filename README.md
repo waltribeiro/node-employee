@@ -1,2 +1,2 @@
-# node-employee
-Used Node.js for proof-of-concept creation of employee spreadsheet
+# employee-generator
+Created an app that dynamically generates basic employee summaries, profiles, and links

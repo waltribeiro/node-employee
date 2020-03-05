@@ -3,9 +3,15 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+node_modules
 
 # Other files and folders
 .settings/
+*.pxm
+*.mp4
+*.mov
+*.code-workspace
+.DS_Store
 
 # Executables
 *.swf
