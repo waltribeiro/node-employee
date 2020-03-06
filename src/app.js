@@ -66,12 +66,12 @@ const engineerQuestions = [
 ];
 
 const newTeamMemberQuestions = [
-       {
-        type: "list",
-        message: "Would you like to add more team members?",
-        name: "newTeamMember",
-        choices:["yes", "no"]
-       }
+    {
+    type: "list",
+    message: "Would you like to add more team members?",
+    name: "newTeamMember",
+    choices:["yes", "no"]
+    }
 ];
 
 
@@ -101,5 +101,27 @@ await inquirer
                 allEmployees.push(newEngineer);
             }
         })
+        await inquirer
+        .prompt(newTeamMemberQuestions)
+        .then(async function (answers) {
+            if(answers.newTeamMember === "yes") {
+                makeEmployee();
+            }
+            else {
 
+                template = render(allEmployees);
+                fs.writeFile(outputPath, template, err => {
+                    if(err) {
+                        throw err
+                    }
+                    }
+                )
+
+                return;
+            }
+    })
+
+    }
+
+    makeEmployee();
     
