@@ -1,6 +1,8 @@
 # employee-generator
 
-Created a Node.js program that generates an HTML page of employee summaries, profiles, and links
+Created a Node.js program that generates an HTML page of employee summaries, profiles, and links.
+
+[Click here](https://waltribeiro.github.io/node-employee/src/output/team) to view the actual document that was created.
 
 ## Technologies
 - JEST and Test Driven Development
